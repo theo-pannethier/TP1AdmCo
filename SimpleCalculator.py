@@ -7,8 +7,17 @@ Created on Fri Feb  4 14:20:36 2022
 """
 
 
-class SimpleCalculator:
-    def is_num_int(self, a):
+class  SimpleCalculator:
+    """
+    Classe pour le calcul
+    """
+
+    def __init__(self):
+        """
+        inti
+        """
+
+    def is_num_int(self, a_int):
         """
         Entrée : 1 entier
         Sortie : 1 booleen
@@ -16,13 +25,13 @@ class SimpleCalculator:
         Description : programme verifiant que a est un int
         """
         try:
-            int(a)
+            int(a_int)
             it_is = True
         except ValueError:
             it_is = False
         return it_is
 
-    def sum2(self, a, b):
+    def sum2(self, a_int, b_int):
         """
         Entrée : 2 entiers
         Sortie : 1 entier
@@ -30,11 +39,11 @@ class SimpleCalculator:
         Description : programme réalisant l'operation int(a)+int(b)
         """
         res = -1
-        if self.is_num_int(a) and self.is_num_int(b):
-            res = a + b
+        if self.is_num_int(a_int) and self.is_num_int(b_int):
+            res = a_int + b_int
         return res
 
-    def substract(self, a, b):
+    def substract(self, a_int, b_int):
         """
         Entrée : 2 entiers avec b != 0
         Sortie : 1 entier
@@ -42,11 +51,11 @@ class SimpleCalculator:
         Description : programme réalisant l'operation int(a)-int(b)
         """
         res = -1
-        if self.is_num_int(a) and self.is_num_int(b):
-            res = a - b
+        if self.is_num_int(a_int) and self.is_num_int(b_int):
+            res = a_int - b_int
         return res
 
-    def divide(self, a, b):
+    def divide(self, a_int, b_int):
         """
         Entrée : 2 entiers
         Sortie : 1 float
@@ -54,11 +63,11 @@ class SimpleCalculator:
         Description : programme réalisant l'operation int(a)/int(b)
         """
         res = -1
-        if self.is_num_int(a) and self.is_num_int(b) and b != 0:
-            res = a / b
+        if self.is_num_int(a_int) and self.is_num_int(b_int) and b_int != 0:
+            res = a_int / b_int
         return res
 
-    def mul(self, a, b):
+    def mul(self, a_int, b_int):
         """
         Entrée : 2 entiers
         Sortie : 1 entier
@@ -66,12 +75,12 @@ class SimpleCalculator:
         Description : programme réalisant l'operation int(a)*int(b)
         """
         res = -1
-        if self.is_num_int(a) and self.is_num_int(b):
-            res = a * b
+        if self.is_num_int(a_int) and self.is_num_int(b_int):
+            res = a_int * b_int
         return res
 
 
-print(SimpleCalculator.sum2(10, 2))
-print(SimpleCalculator.substract(10, 2))
-print(SimpleCalculator.divide(10, 2))
-print(SimpleCalculator.mul(10, 2))
+# print(SimpleCalculator.sum2(10, 2))
+# print(SimpleCalculator.substract(10, 2))
+# print(SimpleCalculator.divide(10, 2))
+# print(SimpleCalculator.mul(10, 2))
