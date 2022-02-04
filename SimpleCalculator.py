@@ -80,7 +80,9 @@ class  SimpleCalculator:
         return res
 
 
-# print(SimpleCalculator.sum2(10, 2))
-# print(SimpleCalculator.substract(10, 2))
-# print(SimpleCalculator.divide(10, 2))
-# print(SimpleCalculator.mul(10, 2))
+#
+#Objet = SimpleCalculator()
+#print(Objet.sum2(10, 2))
+#print(Objet.substract(10, 2))
+#print(Objet.divide(10, 2))
+#print(Objet.mul(10, 2))
