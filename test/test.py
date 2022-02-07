@@ -12,11 +12,12 @@ python3 -m pylint Programme.py
 """
 
 from calculator.SimpleCalculator import SimpleCalculator
+import unittest
 
 
 
 OBJET = SimpleCalculator()
 print (OBJET.sum2(10, 2))
 print(OBJET.substract(10, 2))
-print(OBJET.divide(10, 2))
+print(OBJET.divide(10, 0))
 print(OBJET.mul(10, 2))
